@@ -1,0 +1,2 @@
+class SaverAdsController < ApplicationController
+end

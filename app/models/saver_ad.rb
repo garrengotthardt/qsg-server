@@ -1,0 +1,2 @@
+class SaverAd < ApplicationRecord
+end
