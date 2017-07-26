@@ -1,8 +1,14 @@
 Rails.application.routes.draw do
-  resources :saver_ads
-  resources :categories
-  resources :ad_categories
-  resources :ads
-  resources :users
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  namespace :api do
+    namespace :v1 do
+      # post '/login', to: 'auth#create'
+      # get '/me', to: 'auth#show'
+
+      resources :saver_ads
+      resources :categories
+      resources :ad_categories
+      resources :ads
+      resources :users
+    end
+  end
 end
