@@ -1,3 +1,3 @@
 class AdCreatorSerializer < ActiveModel::Serializer
-  attributes :name
+  attributes :title
 end
