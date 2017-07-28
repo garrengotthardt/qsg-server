@@ -19,7 +19,7 @@ class Api::V1::AuthController < ApplicationController
       # if they do, render back a json response of the user info
       # issue token
       # created_jwt = issue_token({id: user.id})
-      render json: {email: user.email}
+      render json: {user: user}
     else
       # otherwise, render back some error response
       render json: {
