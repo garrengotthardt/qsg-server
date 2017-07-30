@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-u1 = User.create(first_name: 'Alexa', last_name: ' ', email: 'alex@yahoo.com')
+u1 = User.create(first_name: 'Alexa', last_name: 'Meyer', email: 'alex@yahoo.com')
 u2 = User.create(first_name: 'Squidward', last_name: 'Tentacles', email: 'squidward_tentacles@yahoo.com')
 u3 = User.create(first_name: 'A', last_name: 'Dog', email: 'doggo91@yahoo.com')
 u4 = User.create(first_name: 'Martha', last_name: 'Stewart', email: 'martha_stewart@yahoo.com')
@@ -18,6 +18,8 @@ vitamix = Ad.create(title: "Vitamix", description: "Rarely used, good as new. Ge
 dog = Ad.create(title: "Dog for Adoption", description: "2 years old, Berner Senne, brown", price: 0, location: "Manhattan", image_url: 'https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/Common-dog-behaviors-explained.jpg?itok=FSzwbBoi', creator_id: 3)
 car = Ad.create(title: "Used Car", description: "Yellow Lamborghini, 20 miles, 1985", price: 23000, location: "NJ", image_url: 'http://starmoz.com/images/yellow-lamborghini-6.jpg', creator_id: 4)
 apartment = Ad.create(title: "Apartment for Sale", description: "Next to Central Park, left by ex-wife, need to vacate next week!", price: 1500000, location: "Manhattan", image_url: 'https://cdn.vox-cdn.com/uploads/chorus_image/image/48007703/4.0.0.jpg', creator_id: 5)
+desk = Ad.create(title: "Antique desk from 1800s", description: "Belonged to Jane Austen. This is where she wrote 'Pride and Prejudice.' Rare item. Unique even. Open for negotiation.", price: 700, location: "Manhattan", image_url: 'http://www.ikea.com/PIAimages/0180198_PE332339_S5.JPG', creator_id: 1)
+pillow = Ad.create(title: "Colorful pillow", description: "It was my late husband's favorite. He used to snuggle with it whenever he felt sad. It has healing powers.", price: 1500000, location: "Manhattan", image_url: 'https://ctl.s6img.com/society6/img/Dqf2NTCeh62O68Ox52Gu7cE6pL8/h_550,w_550/pillows/~artwork/s6-0011/a/3250008_8835913/~~/march-1927-pillows.jpg', creator_id: 1)
 
 furniture = Category.create(name: "Furniture")
 pets = Category.create(name: "Pets")
@@ -34,3 +36,5 @@ AdCategory.create(ad_id: 2 , category_id: 1)
 AdCategory.create(ad_id: 3 , category_id: 2)
 AdCategory.create(ad_id: 4 , category_id: 3)
 AdCategory.create(ad_id: 5 , category_id: 4)
+AdCategory.create(ad_id: 6 , category_id: 1)
+AdCategory.create(ad_id: 7 , category_id: 1)
