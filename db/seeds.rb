@@ -13,7 +13,7 @@ u3 = User.create(first_name: 'A', last_name: 'Dog', email: 'doggo91@yahoo.com', 
 u4 = User.create(first_name: 'Martha', last_name: 'Stewart', email: 'martha_stewart@yahoo.com', image_url: 'http://static3.businessinsider.com/image/5474c14eecad049525222dba/now-we-know-whos-buying-martha-stewart.jpg')
 u5 = User.create(first_name: 'Shakira', last_name: 'Shakira', email: 'shakira@yahoo.com', image_url: 'http://www.billboard.com/files/media/shakira-portrait-may-2017-billboard-1548.jpg')
 
-couch = Ad.create(title: "New Couch", description: "Modern Martha Stewart style, very pretty", price: 249.99, location: "BK", image_url: 'https://jetimages.azureedge.net/md5/526d5d13e832ada86cfd2331dd853546.500', creator_id: 1)
+couch = Ad.create(title: "New Couch", description: "Modern Martha Stewart style, very pretty", price: 249.99, location: "BK", image_url: 'https://ashleyfurniture.scene7.com/is/image/AshleyFurniture/46500-38-10x8-CROP?$AFHS-Grid-1X$', creator_id: 1)
 vitamix = Ad.create(title: "Vitamix", description: "Rarely used, good as new. Get on with your healthy lifestyle. Now!", price: 199.99, location: "Williamsburg", image_url: 'https://www.vitamix.com/media/other/images/GS-rglam-black_fullsize.jpg', creator_id: 2)
 dog = Ad.create(title: "Dog for Adoption", description: "2 years old, Berner Senne, brown", price: 0, location: "Manhattan", image_url: 'https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/Common-dog-behaviors-explained.jpg?itok=FSzwbBoi', creator_id: 3)
 car = Ad.create(title: "Used Car", description: "Yellow Lamborghini, 20 miles, 1985", price: 23000, location: "NJ", image_url: 'http://starmoz.com/images/yellow-lamborghini-6.jpg', creator_id: 4)

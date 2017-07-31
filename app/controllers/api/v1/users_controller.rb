@@ -7,6 +7,11 @@ module Api
         render json: User.all
       end
 
+      def show
+        render json: User.find(params[:id])
+
+      end
+
       def create
         @user = User.new()
         @user.first_name = user_params[:first_name]
