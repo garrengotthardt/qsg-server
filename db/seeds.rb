@@ -7,11 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-u1 = User.create(first_name: 'Alexa', last_name: 'Meyer', email: 'alex@yahoo.com')
-u2 = User.create(first_name: 'Squidward', last_name: 'Tentacles', email: 'squidward_tentacles@yahoo.com')
-u3 = User.create(first_name: 'A', last_name: 'Dog', email: 'doggo91@yahoo.com')
-u4 = User.create(first_name: 'Martha', last_name: 'Stewart', email: 'martha_stewart@yahoo.com')
-u5 = User.create(first_name: 'Shakira', last_name: 'Shakira', email: 'shakira@yahoo.com')
+u1 = User.create(first_name: 'Alexa', last_name: 'Meyer', email: 'alex@yahoo.com', image_url: 'https://m.media-amazon.com/images/G/01/DeveloperBlogs/AmazonDeveloperBlogs/legacy/Screen_Shot_2016-03-03_at_7.01.22_AM._CB520200558_.png')
+u2 = User.create(first_name: 'Squidward', last_name: 'Tentacles', email: 'squidward_tentacles@yahoo.com', image_url: 'http://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/squidward-tentacles-spongebob-squarepants-typing-4.53.jpg')
+u3 = User.create(first_name: 'A', last_name: 'Dog', email: 'doggo91@yahoo.com', image_url: 'https://pbs.twimg.com/profile_images/331799757/PuppyRunnning.jpg')
+u4 = User.create(first_name: 'Martha', last_name: 'Stewart', email: 'martha_stewart@yahoo.com', image_url: 'http://static3.businessinsider.com/image/5474c14eecad049525222dba/now-we-know-whos-buying-martha-stewart.jpg')
+u5 = User.create(first_name: 'Shakira', last_name: 'Shakira', email: 'shakira@yahoo.com', image_url: 'http://www.billboard.com/files/media/shakira-portrait-may-2017-billboard-1548.jpg')
 
 couch = Ad.create(title: "New Couch", description: "Modern Martha Stewart style, very pretty", price: 249.99, location: "BK", image_url: 'https://jetimages.azureedge.net/md5/526d5d13e832ada86cfd2331dd853546.500', creator_id: 1)
 vitamix = Ad.create(title: "Vitamix", description: "Rarely used, good as new. Get on with your healthy lifestyle. Now!", price: 199.99, location: "Williamsburg", image_url: 'https://www.vitamix.com/media/other/images/GS-rglam-black_fullsize.jpg', creator_id: 2)
