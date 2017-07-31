@@ -7,7 +7,20 @@ module Api
         render json: SaverAd.all
       end
 
-    end
+      def create
+        @saver_ad = SaverAd.new()
+        @saver_ad.saved_ad_id = saver_ad_params[:saved_ad_id]
+        @saver_ad.saver_id = saver_ad_params[:saver_id]
+        @saver_ad.save
+        render json: {message: "Saved ad!", status: 201}
+      end
 
+      private
+
+      def saver_ad_params
+        params.require(:saver_ad).permit(:saved_ad_id, :saver_id)
+      end
+
+    end
   end
 end
