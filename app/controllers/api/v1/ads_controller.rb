@@ -19,6 +19,7 @@ module Api
 
       def create
         ad = Ad.create(ad_params)
+        # debugger
         AdCategory.create(ad_id: ad.id, category_id: Category.find_by(name: params[:category]).id)
         render json: {message: "Created Ad!", ad: ad, status: 201}
       end
