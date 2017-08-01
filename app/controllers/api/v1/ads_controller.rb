@@ -18,21 +18,15 @@ module Api
 
 
       def create
-        @ad = Ad.new()
-        @ad.title = ad_params[:title]
-        @ad.description = ad_params[:description]
-        @ad.price = ad_params[:price]
-        @ad.location = ad_params[:location]
-        @ad.image_url = ad_params[:image_url]
-        @ad.creator_id = ad_params[:creator_id]
-        @ad.save
-        render json: {message: "Created Ad!", status: 201}
+        ad = Ad.create(ad_params)
+        AdCategory.create(ad_id: ad.id, category_id: Category.find_by(name: params[:category]).id)
+        render json: {message: "Created Ad!", ad: ad, status: 201}
       end
 
       private
 
       def ad_params
-        params.require(:ad).permit(:title, :description, :location, :price, :image_url, :creator_id, :id)
+        params.require(:ad).permit(:title, :description, :location, :price, :image_url, :category, :creator_id, :id)
       end
 
     end
