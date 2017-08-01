@@ -15,6 +15,13 @@ module Api
         render json: {message: "Saved ad!", status: 201}
       end
 
+
+      def destroy
+        @saver_ad = SaverAd.find(params[:id])
+        @saver_ad.destroy
+        render json: {message: "Unsaved ad!", status: 201}
+      end
+
       private
 
       def saver_ad_params
